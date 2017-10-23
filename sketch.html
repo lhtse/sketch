@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="sketch.css">
+    <script src="menu.js"></script>
+    <script src="sketch.js"></script>
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Sketch</h1>
+      <div id="avIcon">
+        <span class="popup" id="namePopup"></span>
+      </div>
+    </header>
+    <!--Drawing Board-->
+    <main>
+      <canvas id="board">"Oops, canvas is not supported by browser."</canvas>
+    </main>
+    <!--Login Box-->
+    <aside class="modal" id="loginModal">
+      <form class="loginForm" id="myLoginForm">
+        <header id="loginHeader">
+          <h1 id="welcome">Welcome to Sketch</h1>
+        </header>
+        <section>
+          <span class="popup errorPop" id="iconError">Please Select an Icon</span>
+          <label class="loginText" id="iconLabel">Select an Icon</label>
+          <div id="iconGroup">
+            <button class="avatar" id="car" type="button"><i id="icar" class="material-icons icons">directions_car</i></button>
+            <button class="avatar" id="face" type="button"><i id="iface" class="material-icons icons">face</i></button>
+            <button class="avatar" id="fingerprint" type="button"><i id="ifingerprint" class="material-icons icons">fingerprint</i></button>
+            <button class="avatar" id="chair" type="button"><i id="ichair" class="material-icons icons">event_seat</i></button>
+            <button class="avatar" id="puzzle" type="button"><i id="ipuzzle" class="material-icons icons">extension</i></button>
+        </div>
+        </section>
+        <section id="userGroup">
+          <span class="popup errorPop" id="userError">Username Required</span>
+          <label class="loginText">Username</label>
+          <input class="loginText" id="userText" type=text placeholder="Enter Username" name="user">
+          <button class="loginText" id="submit" type=submit>Submit</button>
+        </section>
+      </form>
+    </aside>
+    <!--Confirm Clear box-->
+    <aside class="modal" id="clrModal">
+      <section id="clrBox">
+        <button class="closeBtn" id="clrCloseBtn" type=button><i class="material-icons lgIcon">close</i></button>
+        <h5>Clear canvas?</h5>
+        <button id="clrBtn" type=button>OK</button>
+      </section>
+    </aside>
+    <!--Sidebar for drawing board options-->
+    <aside class="sideMenu">
+      <!--Color options-->
+      <button class="menuBtn accordion" id="colorBtn" type=button><i class="material-icons menu">color_lens</i></button>
+      <section class="subMenu" id="colorMenu">
+        <canvas id="colorPicker"></canvas>
+        <canvas id="colorSlider"></canvas>
+
+      </section>
+      <!--Brush-size options-->
+      <button class="menuBtn accordion" id="sizeBtn" type=button><i class="material-icons menu">gesture</i></button>
+      <section class="subMenu" id="brushSize">
+        <button class="size subMenu" id=18><i title="size" class="material-icons smIcon">lens</i></button><br>
+        <button class="size subMenu" id=24><i class="material-icons mdIcon">lens</i></button><br>
+        <button class="size subMenu" id=36><i class="material-icons lgIcon">lens</i></button><br>
+        <button class="size subMenu" id=48><i class="material-icons xlIcon">lens</i></button><br>
+      </section>
+      <!--Stroke style options-->
+      <button class="menuBtn accordion" id="strokeBtn"><i class="material-icons menu">brush</i></button>
+      <section class="subMenu" id="strokeStyle">
+        <button class="brush subMenu"><i class="material-icons lgIcon">radio_button_unchecked</i></button>
+        <button class="brush subMenu"><i class="material-icons lgIcon">check_box_outline_blank</i></button>
+        <button class="brush subMenu"><i class="material-icons lgIcon">edit</i></button>
+      </section>
+      <!--Undo button-->
+      <button class="menuBtn" id="undo"><i class="material-icons menu">undo</i></button>
+      <!--Redo button-->
+      <button class="menuBtn" id="redo"><i class="material-icons menu">redo</i></button>
+      <!--Download link-->
+      <a class="menuBtn" id="save" download="sketch.png"><i class="material-icons menu">file_download</i></a>
+      <!--Delete button-->
+      <button class="menuBtn" id="delete"><i class="material-icons menu">delete_forever</i></button>
+    </aside>
+  </body>
+</html>

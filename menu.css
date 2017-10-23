@@ -1,0 +1,117 @@
+
+button.subMenu,
+button.menuBtn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+button.subMenu {
+  background-color: #eee;
+  text-align: center;
+}
+
+button.menuBtn, #save {
+	cursor: pointer;
+  display: block;
+	padding: 18px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+button.menuBtn {
+  background-color: #222;
+	color: #444;
+  width: 100%;
+}
+
+button.accordion.active,
+button.menuBtn:hover,
+#save:hover {
+	background-color: #49e;
+}
+
+button.accordion.after {
+	color: #777;
+  float: right;
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+#colorMenu {
+  height: 175px;
+}
+
+#colorPicker {
+  border-radius: 5px 0 0 5px;
+  cursor: crosshair;
+  display: none;
+  padding-right: 25px;
+  position: absolute;
+  right: -50px;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+#colorPicker:hover {
+  padding-right: 0;
+  right: 100%;
+}
+
+#colorSelection {
+	 text-align: center;
+}
+
+#colorSlider {
+  cursor: crosshair;
+}
+
+#delete {
+  bottom: 0;
+	position: absolute;
+}
+
+#delete:hover {
+	 background-color: #d22;
+}
+
+.material-icons.menu {
+  color: rgba(255, 255, 255, 1);
+  font-size: 36px;
+}
+
+.material-icons.smIcon {
+  font-size: 18px;
+}
+
+.material-icons.mdIcon {
+  font-size: 24px;
+}
+
+.material-icons.lgIcon {
+  font-size: 36px;
+}
+
+.material-icons.xlIcon {
+  font-size: 48px;
+}
+
+section.subMenu {
+  background-color: #eee;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: max-height 0.2s ease-out;
+}
+
+.sideMenu {
+  background-color: #222;
+  height: 100%;
+  max-width: 100px;
+	min-width: 75px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 8%;
+  z-index: 1;
+}

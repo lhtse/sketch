@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Antic);
+
+.loginText {
+	font: bold 38px 'Antic', sans-serif;
+  width: 100%;
+}
+
+#iconGroup {
+	float: inherit;
+	margin: 24px 0 12px 0;
+  position: relative;
+	text-align: center;
+	width: auto;
+}
+
+.avatar {
+  background-color: #aaa;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  display: inline-block;
+  height: 85px;
+  margin: 30px 2px;
+  text-align: center;
+  width: 85px;
+}
+
+label {
+  float: left;
+}
+
+#iconLabel {
+	padding-left: 12px;
+}
+
+#welcome {
+	background-color: #49e;
+	color: white;
+  display: inline-block;
+	padding: 20px 0 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.avatar:hover, button.avatar.active {
+  border: 4px dashed #2ED021;
+	-ms-transform: scale(1.25); /* IE 9 */
+  transform: scale(1.25);
+  -webkit-transform: scale(1.25); /* Safari */
+}
+
+.icons {
+  font-size: 60px;
+}
+
+#car {
+	background-color: #3cb;
+}
+
+#face {
+	background-color: #5cd;
+}
+
+#fingerprint {
+	background-color: #aae;
+}
+
+#chair {
+	background-color: #e2c;
+}
+
+#puzzle {
+	background-color: #e95;
+}
+
+input[type=text] {
+  border: 1px solid #888;
+  box-sizing: border-box;
+	font-weight: normal;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+#userGroup {
+  padding: 16px;
+}
+
+.loginForm {
+	background-color: white;
+	height: auto;
+	margin: 5% auto 15% auto;
+	min-height: 600px;
+	overflow: hidden;
+	width: 550px;
+}
+
+#submit {
+	background-color: #2b4;
+  border: none;
+	color: white;
+  cursor: pointer;
+  float: right;
+  height: 65px;
+  margin: 35px 0;
+	padding 20px 20px;
+}
+
+#submit:hover {
+  background-color: #3c3;
+}
+
+.shake {
+	animation-name: shake;
+	animation-duration: 1s;
+}
+
+@keyframes shake {
+	10%, 90% { transform: translateX(-2px); }
+	20%, 80% { transform: translateX(3px); }
+	30%, 50%, 70% { transform: translateX(-5px); }
+	40%, 60% { transform: translateX(6px); }
+}
