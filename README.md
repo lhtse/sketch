@@ -7,6 +7,8 @@ Be sure that your browser is capable of handling HTML canvas.
 
 # <h2> Usage
 Select an avatar icon and enter your name to begin (don't worry, none of your information will be stored!)
+![alt text](screencaps/Screencap1.png "Filling out login form")
+
 Hold the mouse down within the dotted broders to begin drawing. 
 You can select the color, brush size, and brush type using the respective menu icons on the side bar.
 Additionally, you can undo, redo, download, or clear your drawing through the side bar.
