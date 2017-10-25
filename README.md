@@ -14,6 +14,7 @@ You can select the color, brush size, and brush type using the respective menu i
 ![alt text](screencaps/Screencap2.png "Drawing on sketch pad")
 
 Additionally, you can undo, redo, download, or clear your drawing through the side bar.
+![alt text](screencaps/Screencap3.png "Clearing canvas")
 
 # <h2> Licensing 
 This project is licensed under the GNU General Public License v3.0. 
