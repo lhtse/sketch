@@ -11,6 +11,8 @@ Select an avatar icon and enter your name to begin (don't worry, none of your in
 
 Hold the mouse down within the dotted broders to begin drawing. 
 You can select the color, brush size, and brush type using the respective menu icons on the side bar.
+![alt text](screencaps/Screencap2.png "Drawing on sketch pad")
+
 Additionally, you can undo, redo, download, or clear your drawing through the side bar.
 
 # <h2> Licensing 
